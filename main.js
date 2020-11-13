@@ -114,7 +114,9 @@ function create(data) {
     circle
         .join("circle")
         .attr("class", "circle")
-        .attr("fill", "orange")
+        .attr("fill", "rgb(49, 49, 49)")
+        .attr("stroke", "white")
+        .attr("stroke-width", 1.5)
         .attr("cx", d => x(d.miles))
         .attr("cy", d => y(d.gas))
         .attr("r", 3)
